@@ -10,7 +10,6 @@ class App {
 
     public app: express.Application;
     public routePrv: Wines = new Wines();
-    public mongoUrl: string = 'mongodb://localhost/bordeauxsvanner';  
 
     constructor() {
         this.app = express();
