@@ -7,6 +7,12 @@ export class Wines {
 
     public routes(app): void {
 
+
+        app.route('/test').get(async (req: Request, res: Response) => {
+            res.send(200);
+        })
+
+
         app.route('/post/wines').post(async (req: Request, res: Response) => {
 
             try {
