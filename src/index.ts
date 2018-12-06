@@ -1,6 +1,7 @@
 import * as express from "express";
 import * as bodyParser from "body-parser";
 import * as mongoose from "mongoose";
+const config = require('../config/config');
 
 // import routers
 import { Wines } from './routes';
@@ -27,7 +28,7 @@ class App {
 
     private mongoSetup(): void{
         (<any>mongoose).Promise = global.Promise;
-        mongoose.connect(this.mongoUrl);    
+        mongoose.connect(config.db);    
     }
 
 }

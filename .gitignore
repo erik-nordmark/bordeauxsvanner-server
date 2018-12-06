@@ -66,5 +66,7 @@ typings/
 # misc
 .DS_Store
 
+# Project specifics
+config/
 *.pem
 db
