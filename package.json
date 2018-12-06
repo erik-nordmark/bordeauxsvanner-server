@@ -1,0 +1,26 @@
+{
+  "name": "bordeauxsvanner-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/server.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "fast-csv": "^2.4.1",
+    "mongoose": "^5.3.14",
+    "typescript": "^3.1.6"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.1.15",
+    "@types/mongoose": "^5.3.1",
+    "@types/node": "^10.12.10",
+    "nodemon": "^1.18.7",
+    "ts-node": "^7.0.1"
+  }
+}
